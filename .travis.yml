@@ -21,11 +21,11 @@ script: ./gradlew build && ./gradlew shadowJar
 deploy:
   skip_cleanup: true
   provider: releases
-  api_key: "$GIT_OAUTH_TOKEN_TB"
-  file: "/home/travis/build/TwrpBuilder/twrpbuilder_tree_generator/build/libs/TwrpBuilder-1.0-SNAPSHOT.jar"
+  api_key: "$GitOAUTHToken_TWRP"
+  file: "/home/travis/build/ALGPHELLO/TWRP_TREE/build/libs/TwrpBuilder-1.0-SNAPSHOT.jar"
   on:
     tags: false
-    repo: TwrpBuilder/twrpbuilder_tree_generator
+    repo: ALGPHELLO/TWRP_TREE
     branch: master
 branches:
   except:
