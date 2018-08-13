@@ -26,7 +26,7 @@ deploy:
   on:
     tags: false
     repo: ALGPHELLO/TWRP_TREE
-    branch: master
+    branch: TWRP
 branches:
   except:
     - /^(?i:untagged)-.*$/
