@@ -394,7 +394,7 @@ public class MakeTree extends Tools {
                 "    -O $HOME/twrp.tar.xz\n" +
                 "  - tar -xJf twrp.tar.xz --directory $HOME/twrp/ && rm twrp.tar.xz\n" +
                 "script:\n" +
-                "  - cd $HOME/twrp/ && git clone https://github.com/TwrpBuilder/android_device_" + getBrand() + "_" + getCodename() + ".git device/" + getBrand() + seprator + getCodename() + "\n" +
+                "  - cd $HOME/twrp/ && git clone https://github.com/ALGPHELLO/android_device_" + getBrand() + "_" + getCodename() + ".git device/" + getBrand() + seprator + getCodename() + "\n" +
                 "  - git clone https://github.com/TwrpBuilder/android_device_generic_twrpbuilder.git device/generic/twrpbuilder\n" +
                 "  - git clone https://github.com/omnirom/android_bootable_recovery.git bootable/recovery --depth=1\n" +
                 "  - |\n" +
@@ -410,12 +410,12 @@ public class MakeTree extends Tools {
                 "deploy:\n" +
                 "  skip_cleanup: true\n" +
                 "  provider: releases\n" +
-                "  api_key: \"$GIT_OAUTH_TOKEN_TB\"\n" +
+                "  api_key: \"$GitOAUTHToken_TWRP\"\n" +
                 "  file_glob: true\n" +
                 "  file: $HOME/twrp/*.img\n" +
                 "  on:\n" +
                 "    tags: false\n" +
-                "    repo: TwrpBuilder/android_device_" + getBrand() + "_" + getCodename() + "\n" +
+                "    repo: ALGPHELLO/android_device_" + getBrand() + "_" + getCodename() + "\n" +
                 "    branch: master\n"+
                 "branches:\n" +
                 "  except:\n" +
