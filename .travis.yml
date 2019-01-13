@@ -22,10 +22,10 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key: "$GitOAUTHToken_TWRP"
-  file: "/home/travis/build/ALGPHELLO/TWRP_TREE/build/libs/TwrpBuilder-1.0-SNAPSHOT.jar"
+  file: "/home/travis/build/algphello/TWRP_TREE/build/libs/TwrpBuilder-1.0-SNAPSHOT.jar"
   on:
     tags: false
-    repo: ALGPHELLO/TWRP_TREE
+    repo: algphello/TWRP_TREE
     branch: TWRP
 branches:
   except:
